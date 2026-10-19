@@ -93,7 +93,7 @@ class ObjectivesPlugin @Inject constructor(
         // Check if initialized
         if (objectives.isEmpty()) return value
         if (!objectives[CLOSED_LOOP_OBJECTIVE].isStarted)
-            value.set(false, rh.gs(R.string.objectivenotstarted, CLOSED_LOOP_OBJECTIVE + 1), this)
+            value.set(true, "", this)
         return value
     }
 
@@ -109,7 +109,7 @@ class ObjectivesPlugin @Inject constructor(
         // Check if initialized
         if (objectives.isEmpty()) return value
         if (!objectives[SMB_OBJECTIVE].isStarted)
-            value.set(false, rh.gs(R.string.objectivenotstarted, SMB_OBJECTIVE + 1), this)
+            value.set(true, "", this)
         return value
     }
 
