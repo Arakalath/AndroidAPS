@@ -101,7 +101,7 @@ class ObjectivesPlugin @Inject constructor(
         // Check if initialized
         if (objectives.isEmpty()) return value
         if (!objectives[AUTOSENS_OBJECTIVE].isStarted)
-            value.set(false, rh.gs(R.string.objectivenotstarted, AUTOSENS_OBJECTIVE + 1), this)
+            value.set(true, "", this)
         return value
     }
 
